@@ -18,14 +18,20 @@ int hexagon::getHexagonCircleNumber() {
     return circleNumber_;
 }
 
-std::vector<vertex> hexagon::getHexagonVertexes() const {
-    return vertexes_;
-}
+// std::vector<vertex> hexagon::getHexagonVertexes() const {
+//     return vertexes_;
+// }
 
 std::vector<edge> hexagon::getHexagonEdges() const {
     return edges_;
 }
 
-resourceTypes hexagon::getHexagonResource() const {
+// resourceTypes hexagon::getHexagonResource() const {
+//     return resource_;
+// }
+std::vector<vertex*>& hexagon::getVertices() {
+    return vertices_;
+}
+resourceTypes hexagon:: getResourceType() const {
     return resource_;
 }

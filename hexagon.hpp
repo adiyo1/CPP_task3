@@ -10,6 +10,8 @@ private:
     resourceTypes resource_;
     std::vector<vertex> vertexes_;
     std::vector<edge> edges_;
+    std::vector<vertex*> vertices_; // Declaration of vertices_
+
 
 public:
     hexagon(); // Default constructor
@@ -20,4 +22,7 @@ public:
     std::vector<vertex> getHexagonVertexes() const;
     std::vector<edge> getHexagonEdges() const;
     resourceTypes getHexagonResource() const;
+     std::vector<vertex*>& getVertices(); // Declaration of getVertices
+     resourceTypes getResourceType() const;
+
 };

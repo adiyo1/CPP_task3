@@ -49,6 +49,7 @@ private:
     std::vector<player*> players_;
     player* currentPlayer_;
     board* gameBoard_;
+    
 
 public:
     catan(player& p1, player& p2, player& p3);
@@ -56,5 +57,6 @@ public:
     board& getBoard();
     void ChooseStartingPlayer();
     // void catan::rollDiceAndDistributeResources(player& currentPlayer);
+    void rollDiceAndDistributeResources(player& currentPlayer);
 };
 
